@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Código em JS</title>
+    <style>
+        body{
+            background-color: #8a8aec;
+            color: white;
+            font: normal 15pt Arial;
+        }
+        h1{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição!</p>
+    <!--conteúdo em java script-->
+    <script> 
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite mais um número: ')) /*podemos usar apenas "Number" e forçar o programa se virar. Caso contrário "Number.parsInt". Podemos converter para strings "String(n)*/
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} + ${n2} é igual a ${s}.`)
+    </script>
+</body>
+</html>
