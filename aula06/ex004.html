@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprenddendo javascript</title>
+    <style>
+        body {
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.<br>`)//.lenght diz quantos caracteres foram digitados
+        document.write(`Seu nome em letras maiusculas fica ${nome.toUpperCase()}.<br>`) // .toUpperCase() deixa as letras em caixa alta
+        document.write(`Seu nome em letras minusculas fica ${nome.toLowerCase()}.<br>`)// .toLowerCase() deixa as letras minusculas
+    </script>  
+</body>
+</html>
