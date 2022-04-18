@@ -14,16 +14,26 @@
     </style>
 </head>
 <body>
-    <h1>Iniciando estudos com DOM</h1>
+    <h1 name = "m2">Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
-    <div>Clique em mim.</div>
+    <div id = "msg">Clique em mim.</div>
+    <div id = "msg2">Tente clicar novamente</div>
     <script>
-        var corpo = window.document.body
-        var p1 = window.document.getElementsByTagName('p')[1]
-        window.document.write('Está escrito assim: ' + p1.innerText )
-        p1.style.color = 'blue'
-        corpo.style.background = 'gray'
+         var corpo = window.document.body
+         var p1 = window.document.getElementsByTagName('p')[1] //por marca
+         var d = window.document.getElementById('msg') //por Id
+         var d2 = window.document.getElementsByName('m2')[0] // por nome
+         var d3 = window.document.querySelector('div#msg2') //por Seletor( usa igual ao CSS)
+          window.document.write('Está escrito assim: ' + p1.innerHTML)   
+          p1.style.color = 'yellow' 
+          corpo.style.background = 'darkgreen' 
+          d.style.background = 'blue'
+          d.innerText = 'Estou aguardando...'
+          d2.style.color = 'red'
+          d3.style.color = 'gray'
+          d3.style.background = 'white'
+
     </script>
 </body>
 </html>
