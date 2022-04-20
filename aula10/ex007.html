@@ -5,8 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Somando Números</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+        }
+        input{
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div#res{
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> + <!--Criou uma caixa de números-->
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick = "somar()"> <!--Criou o Botão. Adicionou o evento "onclick"-->
+    <div id="res">Resultado</div>
+
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('txtn1')//variável que está ligada a caixa txtn1
+            var tn2 = window.document.querySelector('input#txtn2') //variável que está ligada a caixa txtn2. so mudei o método.
+            var res = window.document.getElementById('res') //variável que está ligada a div com id 'res'
+            var n1 = Number(tn1.value) // convertendo a var tn1 'string' em um número
+            var n2 = Number(tn2.value) // convertendo a var tn2 'string' em um número. Caso contrário iria concatenar e não somar
+            var s = n1 + n2 // Variável que soma os valores
+            res.innerText = `A soma entre ${n1} e ${n2} é igual a ${s}.`
+        }
+    </script>    
 </body>
 </html>
