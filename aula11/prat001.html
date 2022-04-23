@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            font-size: 15pt;
+            background-color: black;
+        }
+
+        div#corpo{
+            background-color: white;
+            margin: auto;
+            padding: 15px;
+            text-align: center;
+            padding-top: 8px;
+            width: 600px;
+            border-radius: 20px ;
+        }
+
+       input#pais{
+           width: 80pt;
+       }
+    </style>
+</head>
+<body>
+    <div id="corpo">
+        <h1>Vamos falar sobre Nacionalidade</h1>
+          De onde você é? <input type="text" id="pais">
+          <input type="button" value="verificar" onclick="verif()">
+          <div id="res"></div>
+        
+          <script>
+          function verif(){
+            var pais01 = document.querySelector('input#pais')
+            var resp = document.querySelector('div#res')
+            var resp2 = String(pais01.value)
+            resp.innerHTML = `<p>Já que você mora em ${resp2}.</p>`
+            if (resp2 == 'Brasil') {
+                resp.innerHTML += `<p>Então você é <strong>Brasileiro</strong></p>`
+            } else {
+                resp.innerHTML += `<p> Então você é <strong>Estrangeiro!</strong></p>`
+            }
+          }
+          
+          </script>
+    </div>
+</body>
+</html>
