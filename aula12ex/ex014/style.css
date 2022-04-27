@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{
-    background-color: rgb(115, 115, 220);
+    background-color: #9191f4;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15pt;
     font-weight: normal;
@@ -11,6 +11,14 @@ header{
     color: white;
     text-align: center;
 }
+
+div {
+   text-align: center;
+   padding: 8px;
+   font-size: 20pt;
+}
+
+
 
 section{
     background-color: white;
