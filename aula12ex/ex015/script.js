@@ -1,8 +1,8 @@
 function verificar () {
     var data = new Date()
     var ano = data.getFullYear()
-    var fano = document.getElementById('txtano')
-    var res = document.querySelector('div#res')
+    var fano = document.getElementById('txtano') // chama o input com id txtano para o javascript
+    var res = document.querySelector('div#res') // chama a div com id res para o javascript
     if (fano.value.length == 0 || Number(fano.value) > ano) { //'value' é valor e 'lenght' é o comprimento de caracteres
         alert('Verifique os dados e tente novamente!')
     } else {
