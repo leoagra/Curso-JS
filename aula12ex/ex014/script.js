@@ -4,7 +4,7 @@ function carregar() { //cria uma 'function' para chamar a função do colocada n
     var data = new Date() //variável criada para chamar a data/hora do sistema
     var hora = data.getHours() // varivável criada para a hora chamando a 'var data'
     //var hora = 11
-    msg.innerHTML = `Agora são ${hora} horas.` // troca o que tiver escrito no html pela nova mensagem.
+    msg.innerHTML = `Agora são ${hora} horas.` // troca o que tiver escrito na "div msg" pela nova mensagem.
     if (hora >= 0 && hora < 12) {
         //foto manhã
         img.src = 'imagens/manhã.png' // chama a imagem que vc quer usar
