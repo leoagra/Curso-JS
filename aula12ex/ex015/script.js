@@ -8,14 +8,14 @@ function verificar () {
     } else {
         var fsex = document.getElementsByName('radsex')
         var idade = ano - Number(fano.value)
-        var genero = ''
+        var genero = '' // variavel criada para adicionar um atributo futuro dentro da função. 
         var img = document.createElement('img') // criar dinamicamente no js
         img.setAttribute('id', 'foto') // cria um id para foto
         if (fsex[0].checked) {
             genero = 'Homem'
             if (idade >=0 && idade < 5) {
                 //criança
-                img.setAttribute('src', 'imagens/hoemem_crianca.png') //chama a imagem do bonco de imagens
+                img.setAttribute('src', 'imagens/hoemem_crianca.png') //chama a imagem do banco de imagens criado por você
             } else if (idade < 18) {
                 //adolescente
                 img.setAttribute('src', 'imagens/homem_adolec.png')
