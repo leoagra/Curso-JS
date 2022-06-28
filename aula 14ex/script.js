@@ -11,8 +11,27 @@ function contar(){ //let é usado recentemente por questão de scoopo
         res.innerHTML = 'Contando: <br>'
         let i = Number(ini.value)
         let f = Number(fim.value)
-        let p = Number(passo.value)   
+        let p = Number(passo.value) 
+        let c = i 
+
+        //---------------usando o "DO WHILE"------------------
      if (p <= 0) {
+            alert('Passo inválido! Considerando PASSO 1')
+            p = 1}
+     if (i < f) { 
+    do {
+        res.innerHTML += ` ${c} \u{1F449}`
+        c += p
+    }while(c <= f)
+    } else {
+       do {
+        res.innerHTML += ` ${c} \u{1F449}`
+        c -= p
+       }while(c >= f) 
+    }
+       res.innerHTML += ` \u{1F3C1}`
+ //---------------usando o "FOR"------------------
+    /* if (p <= 0) {
             alert('Passo inválido! Considerando PASSO 1')
             p = 1
         }
@@ -25,7 +44,7 @@ function contar(){ //let é usado recentemente por questão de scoopo
                 res.innerHTML += ` ${c} \u{1F449}`
         }
         res.innerHTML += `\u{1F3C1}` //para usar emoji no JS, ele deve estar entre crases (``), no lugar de "U+" vc coloca "\u" e o resto do codigo dentro de chaves {}
- 
+ */
     }
 }
 
